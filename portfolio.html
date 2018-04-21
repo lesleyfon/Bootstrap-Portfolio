@@ -5,6 +5,29 @@
         <title>bootstrap portfolio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     
+        <style>
+             body{
+            margin:0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            background-image: url("tic-tac-toe.png");
+        }
+
+        .card-footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%; 
+            text-align: center;
+            background-color: #666666;
+            flex-shrink: 0;
+            border-top: 5px solid #4aaaa5;
+            text-align: center;
+            color: black;  
+         }
+        </style>
 </head>
 <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,5 +53,8 @@
                   </form> -->
                 </div>
               </nav>
+        <div class="card-footer text-muted">
+            Copyright©
+        </div>
 </body>
 </html>
