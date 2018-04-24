@@ -3,129 +3,134 @@
 <head>
    
   
-    <title>bootstrap portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <style>
-        .card{
-            background-color: aqua;
-            margin-top: 20px;
-            /* margin-left: 50px;
-            margin-right:50px; */
-            width: 960px;
-           margin: 0 auto;
-           /* height: 500px; */
+  <title>About</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        }
-        body{
-            margin:0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            font-size: 16px;
-            background-image: url("tic-tac-toe.png");
-        }
-         .card-footer{
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%; 
-            text-align: center;
-            background-color: #666666;
-            flex-shrink: 0;
-            border-top: 5px solid #4aaaa5;
-            text-align: center;
-            color: black;  
-         }
-  </style>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<style>
+  html, body {
+      height: 100%;
+  }
+  body {
+      display: flex;
+      flex-direction: column;
+      background: url(shattered.png) fixed;
+      height: 100vh;
+  }
+  .content {
+      flex: 1 0 auto;
+  }
+  .container-fluid{
+    background-color:#ebebeb;
+  }
+  footer {
+       flex-shrink: 0;
+       text-align: center;
+       padding: 20px 0;
+  }
+  footer p {
+      color:#fff;
+  }
+  .navbar-inverse {
+      border-radius: 0; 
+    
+  }
+  .navbar-header{
+       padding: 10px;
+       background-color: #4aaaa5;
+               
+ }
+ .navbar-brand{
+  color:#fff
+ }
+  .wrap {
+      width: 960px;
+      margin: 0 auto;
+  }
+  .section {
+         background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+         color: #FFF;
+         padding: 10px 0;
+  }
+  .sectionHeader {
+      border-bottom: 1px solid #9d9d9d;
+  }
+  .nav{
+    color:#fff;
+    background-color: #4aaaa5;
+    padding: 10px
+  }
+  #message-box{
+  
+    height: 200px
+  }
+
+</style>
 </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <a class="navbar-brand" href="#">Lesley Banadzem</a>
-                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html"> About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="portfolio.html">Portfolio</a>
-                    </li>
-                  </ul>
-                  <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form> -->
-                </div>
-              </nav>
 
-              <div class="card">
-                    <h5 class="card-header">Contact</h5>
-                    <div class="card-body">
-                      <!-- <h5 class="card-title">Special title treatment</h5> -->
-                      <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    <div class="content">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="wrap">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Lesley Banadzem</a>
                     </div>
-                    <form>
-                            <!-- <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                            </div> -->
-                            
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Name</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Lesley Fonsi Banadzem</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                    <label for="exampleFormControlSelect1">E-mail:</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>lesleybanadzem2017@gmail.com</option>
-                                    <option>banadzemlesley@yahoo.com</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    </select>
-                                </div>
-                            
-                            <!-- <div class="form-group">
-                                <label for="exampleFormControlSelect2">email @</label>
-                                <select multiple class="form-control" id="exampleFormControlSelect2">
-                                <option>lesleybanadzem2017@gmail.com</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                </select>
-                            </div> -->
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </form>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-sunglasses"></span> About</a></li>
+                        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+                        <li><a href="portfolio.html"><span class="glyphicon glyphicon-th-large"></span> Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-                  </div>
-                  <!-- <div class="card text-center"> -->
-                        <!-- <div class="card-header">
-                          Featured
+
+        <div class="content-container">
+            <div class="wrap">
+                <div class="row section">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    
+                        <div class="row  sectionHeader">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h2>CONTACT</h2>
+                            </div>
                         </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div> -->
-                        <div class="card-footer text-muted">
-                           Copyright©
-                        </div>
-                      </div>
+    
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Name</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">E-mail</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="e-mail">
+                              </div><br>
+                              <div id="message-box">
+
+                                  <h3>Message</h3>
+                                  <textarea class="form-control" rows="3">Message</textarea>
+                              </div>
+                            
+                            <button type="submit" class="btn btn-default">Submit</button>
+                          </form>
+                       
+    
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="navbar-inverse">
+        <div class="wrap">
+            <p> Copyright©</p>
+        </div>
+        
+    </footer>
 </body>
 </html>
